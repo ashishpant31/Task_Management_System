@@ -2,25 +2,26 @@
 
 ## 📖 About
 
-**Task Management System** is a simple, intuitive web app built with [Streamlit](https://streamlit.io) and SQLite. It enables personal and team task management with the ability to create, edit, prioritize, and track task completion easily through a clean interface.
+**Task Management System** is a simple, intuitive web app built with [Streamlit](https://streamlit.io) and SQLite. It enables both personal and team task management, allowing you to create, edit, prioritize, and track tasks easily through a clean interface.
 
 ---
 
 ## ✨ Features
 
-- Add, edit, and update tasks with details including title, description, priority, status, and optional deadlines.
-- Active and completed tasks are displayed separately with clear UI.
-- Editable tasks on clicking active tasks; read-only view for completed tasks.
-- Automatic ranking of active tasks based on priority and deadline.
-- Persistent storage using SQLite database.
-- Optional exporting of task data to CSV for offline review.
-- Responsive and minimal UI powered by Streamlit's rapid app development features.
+- **Task Management:** Add, edit, and update tasks with details including title, description, priority, status, and optional deadlines.
+- **Clear UI:** Active and completed tasks are displayed separately for better organization.
+- **Easy Editing:** Click on active tasks to edit; completed tasks are read-only.
+- **Intelligent Sorting:** Active tasks are automatically ranked by priority and deadline.
+- **Persistent Storage:** All data is saved securely in a local SQLite database.
+- **Export Capability:** Optionally export your tasks to CSV for offline review.
+- **Responsive UI:** Minimal and responsive design powered by Streamlit.
 
 ---
 
 ## 🖼️ Screenshots
 
-### Task Management UI - Active and Completed tasks
+### Task Management UI – Active and Completed Tasks
+
 <p align="center">
   <img width="1493" height="728" alt="Task Manager Screenshot 1" src="https://github.com/user-attachments/assets/ab750486-c96b-4b42-b31e-18db418f0f09" />
 </p>
@@ -33,83 +34,84 @@
 
 ## 🚀 Installation and Setup
 
-1. **Clone the Repository:**
+1. **Clone the Repository**
    ```bash
    git clone https://github.com/ashishpant31/Task_Management_System.git
    cd Task_Management_System
    ```
 
-
-2. **Create and activate a Virtual Environment (recommended):**
+2. **Create & Activate a Virtual Environment (Recommended)**
    ```bash
    python -m venv venv
    ```
    - **Windows:** `.\venv\Scripts\activate`
    - **macOS/Linux:** `source venv/bin/activate`
 
-  
-3. **Install dependencies:**
+3. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
-   *(If requirements.txt is missing, install: streamlit)*
+   *(If `requirements.txt` is missing, install at least: `streamlit`)*
 
-4. **Run the app:**
-```bash
+4. **Run the App**
+   ```bash
    streamlit run app.py
    ```
-   The dashboard will open in your default web browser.
-  
+   The dashboard will open in your default browser.
+
 ---
 
 ## 💡 Usage
 
-- Add new tasks via the sidebar form.
-- Click active task headers to edit details.
-- Mark tasks completed with the ✔️ button.
+- Add new tasks using the sidebar form.
+- Click on an active task’s header to edit its details.
+- Mark tasks as completed with the ✔️ button.
 - Reopen completed tasks with the ↩️ button.
-- Tasks are auto-ranked, and completed tasks are archived separately.
-- Export your task data to CSV (optional, built-in function available).
+- Active tasks are auto-ranked, and completed tasks archived separately.
+- Export task data to CSV using the built-in export function.
 
 ---
 
 ## 📋 Data & Privacy
 
-- All data is stored locally in an SQLite database (`tasks.db`).
+- All task data is stored locally in an SQLite database (`tasks.db`).
 - No data is sent externally.
-- CSV export function is optional and can be enabled/disabled.
+- CSV export is optional and can be enabled or disabled.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please fork the repository and open a pull request with improvements or bug fixes.
+Contributions are welcome!  
+Fork the repository and open a pull request with your improvements or bug fixes.
 
 ---
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License.
 
 ---
 
-## Contact
+## 📬 Contact
 
-For any questions or feedback, please open an issue on the GitHub repository.
+For questions or feedback, please open an issue on the GitHub repository.
 
 ---
 
-## Notes on `.gitignore`
+## 📂 Notes on `.gitignore`
 
-To keep the repo clean and prevent unnecessary files, make sure to ignore:
-```bash
+To keep the repo clean, make sure to include the following in your `.gitignore`:
+
+```
 venv/
 *.pyc
-pycache/
+__pycache__/
 .DS_Store
 *.csv
 tasks.db
 ```
+
 ---
 
 Thank you for checking out the Task Management System!  
